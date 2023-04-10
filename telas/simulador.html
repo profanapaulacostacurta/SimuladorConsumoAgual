@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://profanapaulacostacurta.github.io/simuladorconsumoagua/css/bootstrap.min.css">
+  
   </head>
   <body>
     <div class="container-fluid">
@@ -27,8 +28,65 @@
         </div>
       </div>
       <div class="row">
-        <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/images/telaSimulacao.jpeg" style="width: 100%;">
-      </div>       
+        <label>SELECIONE DUA CATEGORIA</label>
+        <select class="form-select" name="categoria">
+          <option value="A">RESIDENCIAL</option>
+          <option value="B">COMERCIAL</option>
+          <option value="C">INDUSTRIAL E PODER PÚBLICO</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>       
+        <input type="date" name="dtanterior">
+      </div>
+      <div class="row">
+        <label>INFORME O CONSUMO REALIZADO DA ÚLTIMA FATURA</label>
+        <input type="number" name="consumoanterior">
+      </div>
+        <div class="row">
+        <label>INFORME A DATA DA MEDIÇÃO ATUAL</label>
+        <input type="date" name="dataatual">
+      </div>
+      <div class="row">
+        <label>INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
+        <input type="number" name="consumoatual">
+      </div>
+      <div class="row">
+        <label>NA SUA RUA EXISTE REDE COLETORA DE ESGOTO</label>
+        <select name="esgoto">
+          <option value="sim">Sim</option>
+          <option value="não">Não</option>
+        </select>
+      </div>
+      
+      <div class="row mb-3">
+        <label for="GroupPeriodoRegistrado" class="form-label">PERÍODO REGISTRADO</label>
+        <input class="form-control" id="GroupPeriodoRegistrado">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupConsumoRegistrado" class="form-label">CONSUMO REGISTRADO</label>
+        <input class="form-control" id="GroupConsumoRegistrado">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupMediaConsumoDiario" class="form-label">MÉDIA CONSUMO DIÁRIO M³</label>
+        <input class="form-control" id="GroupMediaConsumoDiario">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupMediaConsumoMensal" class="form-label">MÉDIA CONSUMO MENSAL M³</label>
+        <input class="form-control" id=GroupMediaConsumoMensal">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupTarifaAgua" class="form-label">TARIFA DE ÁGUA (R$)</label>
+        <input class="form-control" id="GroupTarifaAgua">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupTarifaEsgoto" class="form-label">TARIFA DE ESGOTO (R$)</label>
+        <input class="form-control" id="GroupTarifaEsgoto">
+      </div>
+      <div class="row mb-3">
+        <label for="GroupValorTotalFatura" class="form-label">VALOR TOTAL DA FATURA</label>
+        <input class="form-control" id="GroupValorTotalFatura">
+      </div>
     </div> 
   </body>
 </html>
