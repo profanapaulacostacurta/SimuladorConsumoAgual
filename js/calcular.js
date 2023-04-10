@@ -1,5 +1,3 @@
-let periodoregistrado, consumoregistrado, mediaconsumodiario, mediaconsumomensal, tarifaagua, tarifaesgoto, valortotalfatura;
-
 function calcularPeriodo(dtanterior, dtatual){
     return dtatual - dtanterior;
 }
