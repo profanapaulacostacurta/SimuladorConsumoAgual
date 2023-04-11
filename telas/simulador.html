@@ -6,7 +6,7 @@
   <body>
     
     <div class="container-fluid">
-      <form> 
+      <form id="formSimulador"> 
         <nav class="navbar navbar-dark bg-primary">
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav1">
               <span class="navbar-toggler-icon"></span>
@@ -94,11 +94,9 @@
         <div class="row justify-content-md-center ">
       </div>
    
-      <input type="button" id="btncalcular" name="btncalcular">
+      <button type="submit" class="btn btn-primary btn-lg" id="btncalcular" name="btncalcular"></button>
       
-    </form>
-      
-    
+        
       <div class="row mb-3 justify-content-md-center ">
         <div class="col-sm-5 h-100 form-group">
           <label for="GroupPeriodoRegistrado" class="form-label text-center text-primary h3">PERÍODO REGISTRADO</label>
@@ -115,63 +113,81 @@
       <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center form-label text-primary h3">MÉDIA CONSUMO DIÁRIO M³</label>
+          <label for="MediaConsumoDiario" class="text-center form-label text-primary h3">MÉDIA CONSUMO DIÁRIO M³</label>
         </div>
         <div class="col-sm-1 h-100">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h1" value="10" disabled="">
+          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h1" id="MediaConsumoDiario" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white" />
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center form-label text-primary bg-opacity-25 h3">MÉDIA CONSUMO MENSAL M³</label>
+          <label for="MediaConsumoMensal" class="text-center form-label text-primary bg-opacity-25 h3">MÉDIA CONSUMO MENSAL M³</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h" value="10" disabled="">
+          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h1" id="MediaConsumoMensal" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center text-primary h3">TARIFA DE ÁGUA (R$)</label>
+          <label for="TarifaAgua" class="text-center text-primary h3">TARIFA DE ÁGUA (R$)</label>
         </div>  
         <div class="col-sm-1 h-100 form-group">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" id="TarifaAgua" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center text-primary h3">TARIFA DE ESGOTO (R$)</label>
+          <label for="TarifaEsgoto" class="text-center text-primary h3">TARIFA DE ESGOTO (R$)</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" id="TarifaEsgoto" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white">
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA (R$)</label>
+          <label for="ValorTotalFatura" class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA (R$)</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" id="ValorTotalFatura" value="10" disabled="">
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+       document.getElementById("formSimulador")
+            .addEventListener("submit", (e) => {
+                 e.preventDefault();
+                 document.getElementById("GroupPeriodoRegistrado").value = ;
+                 document.getElementById("GroupConsumoRegistrado").value;
+                 let mediadiaria = document.getElementById("MediaConsumoDiario").value;
+                 document.getElementById("MediaConsumoMensal").value ;
+                 let tarifa = document.getElementById("TarifaAgua").value;
+                 let esgoto = document.getElementById("TarifaEsgoto").value 
+                 esgoto = (document.getElementById("TarifaAgua").value * 60)/100;
+                 document.getElementById("TarifaEsgoto").value = esgoto;
+                 let fatura = document.getElementById("ValorTotalFatura").value
+                 fatura = (document.getElementById("TarifaAgua").value + document.getElementById("TarifaEsgoto").value; 
+                 document.getElementById("ValorTotalFatura").value = fatura;
+         
+       })
+   </script>
   </body>
 </html>
