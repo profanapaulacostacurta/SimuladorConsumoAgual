@@ -57,28 +57,28 @@
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>       
-            <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="date" name="dtanterior">
+            <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="date" id="dtanterior" name="dtanterior">
           </div>
         </div>
         <hr class="bg-white"/>
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME O CONSUMO REALIZADO DA ÚLTIMA FATURA</label>
-            <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="number" name="consumoanterior">
+            <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="number" id="consumoanterior" name="consumoanterior">
           </div>
         </div>
         <hr class="bg-white"/>
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="date" name="dtatual">
+            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="date" id="dtatual" name="dtatual">
           </div>
         </div>
         <hr class="bg-white"/>
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="number" name="consumoatual" >
+            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="number" id=""consumoatual" name="consumoatual" >
           </div>
         </div>
         <hr class="bg-white" />
@@ -95,7 +95,7 @@
       </div>
       <div class="row mb-3 justify-content-md-center ">
          <div class="col-sm-5 h-100 form-group">
-          <button type="submit" class="btn btn-primary btn-lg" id="btncalcular" name="btncalcular"></button>
+          <button type="submit" class="btn btn-primary btn-lg" id="btncalcular" name="btncalcular">CALCULAR</button>
          </div>
       </div>
             
@@ -177,7 +177,7 @@
        document.getElementById("formSimulador")
             .addEventListener("submit", (e) => {
                  e.preventDefault();
-                 document.getElementById("GroupPeriodoRegistrado").value = dtanterior dtatual
+                 document.getElementById("GroupPeriodoRegistrado").value = (new Date(document.getElementById("dtatual").value) -  new Date(document.getElementById("dtanterior").value)) / (1000 * 60 * 60 * 24)
                  document.getElementById("GroupConsumoRegistrado").value = (parseInt(document.getElementById("consumoatual").value) - (parseInt(document.getElementById("consumoanterior").value);
                  document.getElementById("MediaConsumoDiario").value;
                  document.getElementById("MediaConsumoMensal").value ;
