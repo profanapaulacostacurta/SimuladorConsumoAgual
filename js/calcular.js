@@ -48,7 +48,7 @@ function calcularFaturaCategoriaA(consumoregistrado){
 }
 
 function calcularFaturaCategoriaB(consumoregistrado){
-    let faixa1=10; faixa2=0,
+    let faixa1=10; faixa2=0;
     const faixaB1=22.84, faixaB2=39.55; 
     const adicionalB1=0, adicionalB2=4.82; 
          if (consumoregistrado <= faixa1){
