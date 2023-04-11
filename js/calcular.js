@@ -13,6 +13,18 @@ function calcularMediaconsumomensal(mediaconsumodiario){
     return consumoregistrado*30;
 }
 
+funcion calcularTarifa(comsumoregistrado, categoria){
+    if (categoria == 'A'){
+        return calcularFaturaCategoriaA(consumoregistrado);
+    }else{
+         if (categoria == 'B'){
+             return calcularFaturaCategoriaB(consumoregistrado);
+         }else{
+             return calcularFaturaCategoriac(consumoregistrado);
+         }
+    }
+}
+
 function calcularFaturaCategoriaA(consumoregistrado){
     let faixa1=10; faixa2=5, faixa3=5, faixa4=29, faixa5=0;
     const faixaA1=22.84, faixaA2=22.84, faixaA3=42.62, faixaA4=71.74, faixaA5=295.91;
