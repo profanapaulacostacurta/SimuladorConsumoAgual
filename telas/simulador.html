@@ -28,16 +28,6 @@
         </div>
       </div>
       <hr class="bg-white"/><hr class="bg-white"/><hr class="bg-white"/>
-      <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SELECIONE SUA CATEGORIA
-          </button>
-          <div class="dropdown-menu" aria-labelledby="Selecione uma opção">
-            <a class="dropdown-item" href="#">RESIDENCIAL</a>
-            <a class="dropdown-item" href="#">COMERCIAL</a>
-            <a class="dropdown-item" href="#">INDUSTRIAL E PODER PÚBLICO</a>
-          </div>
-       </div>
       <div class="row justify-content-md-center">
         <div class="col-sm-10 h-100 form-group">
           <label for="GroupCategoria" class="text-center form-label text-primary h3">SELECIONE SUA CATEGORIA</label>
@@ -48,37 +38,37 @@
           </select>
         </div>
       </div>
-      <hr>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-10 h-100">
+      <hr class="bg-white"/>
+      <div class="row justify-content-md-center ">
+        <div class="col-sm-10 h-100 form-group">
           <label class="text-center text-primary h3">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>       
-          <input class="text-center bg-light text-primary h3" type="date" name="dtanterior">
+          <input class="text-center bg-light form-control text-primary h3" type="date" name="dtanterior">
         </div>
       </div>
-      <hr>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-10 h-100">
+      <hr class="bg-white"/>
+      <div class="row justify-content-md-center ">
+        <div class="col-sm-10 h-100 form-group">
           <label class="text-center text-primary h3">INFORME O CONSUMO REALIZADO DA ÚLTIMA FATURA</label>
-          <input class="text-center bg-light text-primary h3" type="number" name="consumoanterior">
+          <input class="text-center bg-light form-control text-primary h3" type="number" name="consumoanterior">
         </div>
       </div>
-      <hr>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-10 h-100">
+      <hr class="bg-white"/>
+      <div class="row justify-content-md-center ">
+        <div class="col-sm-10 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-light text-center text-primary h3" type="date" name="dataatual">
+            <input class="bg-light text-center form-control text-primary h3" type="date" name="dataatual">
         </div>
       </div>
-      <hr>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-10 h-100">
+      <hr class="bg-white"/>
+      <div class="row justify-content-md-center ">
+        <div class="col-sm-10 h-100 form-group">
           <label class="text-center text-primary h3">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
-          <input class="bg-light text-center text-primary h3" type="number" name="consumoatual" >
+          <input class="bg-light text-center form-control text-primary h3" type="number" name="consumoatual" >
         </div>
       </div>
-      <hr>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-10 h-100">
+      <hr class="bg-white" />
+      <div class="row justify-content-md-center ">
+        <div class="col-sm-10 h-100 form-group">
           <label class="text-center text-primary h3">NA SUA RUA EXISTE REDE COLETORA DE ESGOTO</label>
           <select class="bg-light text-center text-primary h3" name="esgoto">
             <option value="sim">Sim</option>
@@ -86,77 +76,77 @@
           </select>
         </div>
       </div>
-      <hr><hr>
-      <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-4 h-100">
+      <hrclass="bg-white"/><hrclass="bg-white"/>
+      <div class="row mb-3 justify-content-md-center ">
+        <div class="col-sm-4 h-100 form-group">
           <label for="GroupPeriodoRegistrado" class="form-label text-center text-primary h3">PERÍODO REGISTRADO</label>
           <input class="text-center bg-light form-control text-primary h3" id="GroupPeriodoRegistrado" value="10" disabled="">
         </div>
         <div class="col-sm-2 h-100">
          
         </div>
-        <div class="col-sm-4 h-100">
+        <div class="col-sm-4 h-100 form-group">
           <label for="GroupConsumoRegistrado" class="form-label text-center text-primary h3">CONSUMO REGISTRADO</label>
           <input class="text-center bg-light form-control text-primary h3" id="GroupConsumoRegistrado" value="10" disabled="">
         </div>
       </div>
-      <hr>
+      <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-5 h-100">
+        <div class="col-sm-5 h-100 form-group">
           <label class="text-center form-label text-primary h3">MÉDIA CONSUMO DIÁRIO M³</label>
         </div>
         <div class="col-sm-2 h-100">
          
         </div>
-        <div class="col-sm-3 h-100">
-          <input class="text-center bg-light text-primary h3" value="10" disabled="">
+        <div class="col-sm-3 h-100 form-group">
+          <input class="text-center form-control bg-light text-primary h3" value="10" disabled="">
         </div>
       </div>
-      <hr>
+      <hr class="bg-white" />
       <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-5 h-100">
+        <div class="col-sm-5 h-100 form-group">
           <label class="text-center form-label text-primary h3">MÉDIA CONSUMO MENSAL M³</label>
         </div>
-        <div class="col-sm-2 h-100">
+        <div class="col-sm-2 h-100 form-group">
          
         </div>
-        <div class="col-sm-3 h-100">
-          <input class="text-center bg-light text-primary h3" value="10" disabled="">
+        <div class="col-sm-3 h-100 form-group">
+          <input class="text-center form-control bg-light text-primary h3" value="10" disabled="">
         </div>
       </div>
-      <hr>
+      <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-5 h-100">
+        <div class="col-sm-5 h-100 form-group">
           <label class="text-center text-primary h3">TARIFA DE ÁGUA (R$)</label>
         </div>  
-        <div class="col-sm-2 h-100">
+        <div class="col-sm-2 h-100 form-group">
          
         </div>
-        <div class="col-sm-3 h-100">
-          <input class="text-center bg-light text-primary h3" value="10" disabled="">
+        <div class="col-sm-3 h-100 form-group">
+          <input class="text-center bg-light form-control text-primary h3" value="10" disabled="">
         </div>
       </div>
-      <hr>
+      <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-5 h-100">
+        <div class="col-sm-5 h-100 form-group">
           <label class="text-center text-primary h3">TARIFA DE ESGOTO (R$)</label>
         </div>
-        <div class="col-sm-2 h-100">
+        <div class="col-sm-2 h-100 form-group">
          
         </div>
-        <div class="col-sm-3 h-100">
-          <input class="text-center bg-light text-primary h3" value="10" disabled="">
+        <div class="col-sm-3 h-100 form-group">
+          <input class="text-center bg-light form-control text-primary h3" value="10" disabled="">
         </div>
       </div>
-      <hr>
+      <hr class="bg-white">
       <div class="row mb-3 justify-content-md-center">
-        <div class="col-sm-5 h-100 ">
-          <label class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA</label>
+        <div class="col-sm-5 h-100 form-group">
+          <label class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA (R$)</label>
         </div>
-        <div class="col-sm-2 h-100">
+        <div class="col-sm-2 h-100 form-group">
          
         </div>
-        <div class="col-sm-3 h-100">
+        <div class="col-sm-3 h-100 form-group">
           <input class="text-center bg-light form-control text-primary h3" value="10" disabled="">
         </div>
       </div>
