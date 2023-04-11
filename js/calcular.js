@@ -26,48 +26,48 @@ function calcularTarifa(consumoregistrado, categoria){
 }
 
 function calcularFaturaCategoriaA(consumoregistrado){
-    let faixa1=10; faixa2=5, faixa3=5, faixa4=29, faixa5=0;
-    let isfaixa1=0,isfaixa2=0,isfaixa3=0, isfaixa4=0,isfaixa5=0;
+    let faixaA1=10; faixaA2=5, faixaA3=5, faixaA4=29, faixaA5=0;
+    let isfaixaA1=0,isfaixaA2=0,isfaixaA3=0, isfaixaA4=0,isfaixaA5=0;
     const faixaA1=22.84, faixaA2=22.84, faixaA3=42.62, faixaA4=71.74, faixaA5=295.91;
     const adicionalA1=0, adicionalA2=3.95, adicionalA3=5.81, adicionalA4=7.46, adicionalA5=9.00;
         if (consumoregistrado <= faixa1){
-            faixa1 = 0;
+            faixaA1 = 0;
             isfaixa1 = 1;
-            faixa2 = 0;
-            faixa3 = 0
-            faixa4 = 0;
-            faixa5 = 0;
+            faixaA2 = 0;
+            faixaA3 = 0
+            faixaA4 = 0;
+            faixaA5 = 0;
         }else {
             if (consumoregistrado <= (faixa1+faixa2)){
-                faixa2 = consumoregistrado - faixa1;
-                isfaixa2 = 1;
-                faixa1 = 0
-                faixa3 = 0
-                faixa4 = 0;
-                faixa5 = 0;
+                faixaA2 = consumoregistrado - faixa1;
+                isfaixaA2 = 1;
+                faixaA1 = 0
+                faixaA3 = 0
+                faixaA4 = 0;
+                faixaA5 = 0;
             }else {
                 if (consumoregistrado <= (faixa1+faixa2+faixa3)){
-                    faixa3 = consumoregistrado - faixa1 - faixa2;
-                    isfaixa3 = 1;
-                    faixa1 = 0;                                
-                    faixa4 = 0;
-                    faixa5 = 0;
+                    faixaA3 = consumoregistrado - faixa1 - faixa2;
+                    isfaixaA3 = 1;
+                    faixaA1 = 0;                                
+                    faixaA4 = 0;
+                    faixaA5 = 0;
                 } else {
                     if (consumoregistrado <= (faixa1+faixa2+faixa3+faixa4)){
-                        faixa4 = consumoregistrado - faixa1 - faixa2 - faixa3;
-                        isfaixa4 = 1;
-                        faixa1 = 0;
-                        faixa5 = 0;
+                        faixaA4 = consumoregistrado - faixa1 - faixa2 - faixa3;
+                        isfaixaA4 = 1;
+                        faixaA1 = 0;
+                        faixaA5 = 0;
                     }else{
-                        faixa5 = consumoregistrado-faixa1-faixa2-faixa3-faixa4;
-                        faixa1 = 0;
-                        isfaixa5 = 1;
+                        faixaA5 = consumoregistrado-faixa1-faixa2-faixa3-faixa4;
+                        faixaA1 = 0;
+                        isfaixaA5 = 1;
                     }
                 }
             }
         }    
         
-    return (isfaixa1*faixaA1) + (isfaixa2*faixaA2) + (isfaixa3*faixaA3) + (isfaixa4*faixaA4) + (isfaixa5*faixaA5) +(faixa1*adicionalA1) + (faixa2*adicionalA2) + (faixa3*adicionalA3) + (faixa4*adicionalA4) + (faixa5*adicionalA5);
+    return (isfaixaA1*faixaA1) + (isfaixaA2*faixaA2) + (isfaixaA3*faixaA3) + (isfaixaA4*faixaA4) + (isfaixaA5*faixaA5) +(faixaA1*adicionalA1) + (faixaA2*adicionalA2) + (faixaA3*adicionalA3) + (faixaA4*adicionalA4) + (faixaA5*adicionalA5);
 }
 
 function calcularFaturaCategoriaB(consumoregistrado){
