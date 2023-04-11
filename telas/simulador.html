@@ -178,16 +178,16 @@
             .addEventListener("submit", (e) => {
                  e.preventDefault();
                  document.getElementById("GroupPeriodoRegistrado").value = (new Date(document.getElementById("dtatual").value) -  new Date(document.getElementById("dtanterior").value)) / (1000 * 60 * 60 * 24)
-                 document.getElementById("GroupConsumoRegistrado").value = parseInt(document.getElementById("consumoatual").value) - parseInt(document.getElementById("consumoanterior").value);
-                 document.getElementById("MediaConsumoDiario").value =   parseInt(document.getElementById("GroupConsumoRegistrado").value) /  parseInt(document.getElementById("GroupPeriodoRegistrado").value);
-                 document.getElementById("MediaConsumoMensal").value = parseInt(document.getElementById("MediaConsumoDiario").value) * 30;
-                 document.getElementById("TarifaAgua").value = calcularTarifa(parseInt(document.getElementById("GroupConsumoRegistrado").value), GroupCategoria);
+                 document.getElementById("GroupConsumoRegistrado").value = parseInt(document.getElementById("consumoatual").value,10) - parseInt(document.getElementById("consumoanterior").value,10);
+                 document.getElementById("MediaConsumoDiario").value =   parseInt(document.getElementById("GroupConsumoRegistrado").value,10) /  parseInt(document.getElementById("GroupPeriodoRegistrado").value,10);
+                 document.getElementById("MediaConsumoMensal").value = parseInt(document.getElementById("MediaConsumoDiario").value,10) * 30;
+                 document.getElementById("TarifaAgua").value = calcularTarifa(parseInt(document.getElementById("GroupConsumoRegistrado").value,10), document.getElementById("GroupCategoria").value);
                  if (document.getElementById("esgoto").value == 's'){
-                    document.getElementById("TarifaEsgoto").value = (parseInt(document.getElementById("TarifaAgua").value) * 60)/100;
+                    document.getElementById("TarifaEsgoto").value = (parseInt(document.getElementById("TarifaAgua").value,10) * 60)/100;
                  } else {
                     document.getElementById("TarifaEsgoto").value = 0;
                  }
-                 document.getElementById("ValorTotalFatura").value = parseInt(document.getElementById("TarifaAgua").value) + parseInt(document.getElementById("TarifaEsgoto").value); 
+                 document.getElementById("ValorTotalFatura").value = parseInt(document.getElementById("TarifaAgua").value,10) + parseInt(document.getElementById("TarifaEsgoto").value,10); 
          
        })
    </script>
