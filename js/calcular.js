@@ -13,7 +13,7 @@ function calcularMediaconsumomensal(mediaconsumodiario){
     return consumoregistrado*30;
 }
 
-function calcularTarifa(comsumoregistrado, categoria){
+function calcularTarifa(consumoregistrado, categoria){
     if (categoria == 'A'){
         return calcularFaturaCategoriaA(consumoregistrado);
     }else{
