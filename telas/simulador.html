@@ -179,11 +179,14 @@
                  e.preventDefault();
                  document.getElementById("GroupPeriodoRegistrado").value = (new Date(document.getElementById("dtatual").value) -  new Date(document.getElementById("dtanterior").value)) / (1000 * 60 * 60 * 24)
                  document.getElementById("GroupConsumoRegistrado").value = (parseInt(document.getElementById("consumoatual").value) - (parseInt(document.getElementById("consumoanterior").value);
-                 document.getElementById("MediaConsumoDiario").value;
-                 document.getElementById("MediaConsumoMensal").value ;
+                 document.getElementById("MediaConsumoDiario").value =   parseInt(document.getElementById("GroupConsumoRegistrado").value) /  parseInt(document.getElementById("GroupPeriodoRegistrado").value);
+                 document.getElementById("MediaConsumoMensal").value = parseInt(document.getElementById("MediaConsumoDiario").value) * 30;
                  document.getElementById("TarifaAgua").value = calcularTarifa(parseInt(document.getElementById("GroupConsumoRegistrado").value), GroupCategoria);
-                 document.getElementById("TarifaEsgoto").value = (parseInt(document.getElementById("TarifaAgua").value) * 60)/100;
-                 let fatura = document.getElementById("ValorTotalFatura").value
+                 if (document.getElementById("esgoto").value == 's'){
+                    document.getElementById("TarifaEsgoto").value = (parseInt(document.getElementById("TarifaAgua").value) * 60)/100;
+                 } else {
+                    document.getElementById("TarifaEsgoto").value = 0;
+                 }
                  document.getElementById("ValorTotalFatura").value = parseInt(document.getElementById("TarifaAgua").value) + parseInt(document.getElementById("TarifaEsgoto").value); 
          
        })
