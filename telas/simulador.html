@@ -71,7 +71,7 @@
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="date" name="dataatual">
+            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="date" name="dtatual">
           </div>
         </div>
         <hr class="bg-white"/>
@@ -177,17 +177,14 @@
        document.getElementById("formSimulador")
             .addEventListener("submit", (e) => {
                  e.preventDefault();
-                 document.getElementById("GroupPeriodoRegistrado").value = ;
-                 document.getElementById("GroupConsumoRegistrado").value;
-                 let mediadiaria = document.getElementById("MediaConsumoDiario").value;
+                 document.getElementById("GroupPeriodoRegistrado").value = dtanterior dtatual
+                 document.getElementById("GroupConsumoRegistrado").value = (parseInt(document.getElementById("consumoatual").value) - (parseInt(document.getElementById("consumoanterior").value);
+                 document.getElementById("MediaConsumoDiario").value;
                  document.getElementById("MediaConsumoMensal").value ;
-                 let tarifa = document.getElementById("TarifaAgua").value;
-                 let esgoto = document.getElementById("TarifaEsgoto").value 
-                 esgoto = (document.getElementById("TarifaAgua").value * 60)/100;
-                 document.getElementById("TarifaEsgoto").value = esgoto;
+                 document.getElementById("TarifaAgua").value = calcularTarifa(parseInt(document.getElementById("GroupConsumoRegistrado").value), GroupCategoria);
+                 document.getElementById("TarifaEsgoto").value = (parseInt(document.getElementById("TarifaAgua").value) * 60)/100;
                  let fatura = document.getElementById("ValorTotalFatura").value
-                 fatura = (document.getElementById("TarifaAgua").value + document.getElementById("TarifaEsgoto").value; 
-                 document.getElementById("ValorTotalFatura").value = fatura;
+                 document.getElementById("ValorTotalFatura").value = parseInt(document.getElementById("TarifaAgua").value) + parseInt(document.getElementById("TarifaEsgoto").value); 
          
        })
    </script>
