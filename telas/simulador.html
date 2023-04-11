@@ -5,23 +5,24 @@
   </head>
   <body>
     <div class="container-fluid">
-    
-      <nav class="navbar navbar-dark bg-primary">
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav1">
-            <span class="navbar-toggler-icon">
-          </span>
-        </button>
-        <div class="navbar-collapse collapse" id="nav2">
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-primary">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="navbar-collapse collapse" id="nav1">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Localização</a>
+                    <a class="nav-link" href="#">"Local</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Atendimento</a>
                 </li>
             </ul>
         </div>
-      </nav>
+      </div>
+    
  
       <div class="row">
         <div class="col-4 h-100"> 
@@ -56,36 +57,36 @@
       <div class="row justify-content-md-center ">
         <div class="col-sm-11 h-100 form-group">
           <label class="text-center text-primary h3">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>       
-          <input class="text-center bg-secondary form-control text-primary h1" type="date" name="dtanterior">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="date" name="dtanterior">
         </div>
       </div>
       <hr class="bg-white"/>
       <div class="row justify-content-md-center ">
         <div class="col-sm-11 h-100 form-group">
           <label class="text-center text-primary h3">INFORME O CONSUMO REALIZADO DA ÚLTIMA FATURA</label>
-          <input class="text-center bg-secondary form-control text-primary h1" type="number" name="consumoanterior">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="number" name="consumoanterior">
         </div>
       </div>
       <hr class="bg-white"/>
       <div class="row justify-content-md-center ">
         <div class="col-sm-11 h-100 form-group">
             <label class="text-center text-primary h3">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-secondary text-center form-control text-primary h1" type="date" name="dataatual">
+            <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="date" name="dataatual">
         </div>
       </div>
       <hr class="bg-white"/>
       <div class="row justify-content-md-center ">
         <div class="col-sm-11 h-100 form-group">
           <label class="text-center text-primary h3">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
-          <input class="bg-secondary text-center form-control text-primary h1" type="number" name="consumoatual" >
+          <input class="bg-secondary text-center bg-opacity-25 form-control text-primary h1" type="number" name="consumoatual" >
         </div>
       </div>
       <hr class="bg-white" />
       <div class="row justify-content-md-center ">
         <div class="col-sm-11 h-100 form-group">
           <label class="text-center text-primary h3">NA SUA RUA EXISTE REDE COLETORA DE ESGOTO</label>
-          <select class="bg-secondary text-center text-primary h1" name="esgoto">
-            <option value="sim">Sim</option>
+          <select class="bg-secondary bg-opacity-25 text-center text-primary h1" name="esgoto">
+            <option value="sim">Sim</optibg-opacity-25 on>
             <option value="não">Não</option>
           </select>
         </div>
@@ -94,14 +95,14 @@
       <div class="row mb-3 justify-content-md-center ">
         <div class="col-sm-5 h-100 form-group">
           <label for="GroupPeriodoRegistrado" class="form-label text-center text-primary h3">PERÍODO REGISTRADO</label>
-          <input class="text-center bg-secondary form-control text-primary h1" id="GroupPeriodoRegistrado" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" id="GroupPeriodoRegistrado" value="10" disabled="">
         </div>
         <div class="col-sm-1 h-100">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
           <label for="GroupConsumoRegistrado" class="form-label text-center text-primary h3">CONSUMO REGISTRADO</label>
-          <input class="text-center bg-secondary form-control text-primary h1" id="GroupConsumoRegistrado" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" id="GroupConsumoRegistrado" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white"/>
@@ -113,19 +114,19 @@
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center form-control bg-secondary text-primary h1" value="10" disabled="">
+          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h1" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white" />
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label class="text-center form-label text-primary h3">MÉDIA CONSUMO MENSAL M³</label>
+          <label class="text-center form-label text-primary bg-opacity-25 h3">MÉDIA CONSUMO MENSAL M³</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center form-control bg-secondary text-primary h" value="10" disabled="">
+          <input class="text-center form-control bg-secondary bg-opacity-25 text-primary h" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white"/>
@@ -137,7 +138,7 @@
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-secondary form-control text-primary h3" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white"/>
@@ -149,7 +150,7 @@
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-secondary form-control text-primary h3" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h3" value="10" disabled="">
         </div>
       </div>
       <hr class="bg-white">
@@ -161,7 +162,7 @@
          
         </div>
         <div class="col-sm-5 h-100 form-group">
-          <input class="text-center bg-light form-control text-primary h1" value="10" disabled="">
+          <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" value="10" disabled="">
         </div>
       </div>
     </div>
