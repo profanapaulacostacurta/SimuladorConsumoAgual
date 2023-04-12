@@ -26,41 +26,46 @@ function calcularTarifa(consumoregistrado, categoria){
 }
 
 function calcularFaturaCategoriaA(consumoregistrado){
-    let faixaA1=10; faixaA2=5, faixaA3=5, faixaA4=29, faixaA5=0;
+    let qtdefaixaA1=10, qtdefaixaA2=5, qtdefaixaA3=5, qtdefaixaA4=29, qtdefaixaA5=0;
     let isfaixaA1=0,isfaixaA2=0,isfaixaA3=0, isfaixaA4=0,isfaixaA5=0;
     const faixaA1=22.84, faixaA2=22.84, faixaA3=42.62, faixaA4=71.74, faixaA5=295.91;
     const adicionalA1=0, adicionalA2=3.95, adicionalA3=5.81, adicionalA4=7.46, adicionalA5=9.00;
-        if (consumoregistrado <= faixa1){
-            faixaA1 = 0;
-            isfaixa1 = 1;
-            faixaA2 = 0;
-            faixaA3 = 0
-            faixaA4 = 0;
-            faixaA5 = 0;
+        if (consumoregistrado <== qtdefaixaA1){
+            qtdefaixaA1 = 0;
+            console.log(qtdefaixaA1);
+            isfaixaA1 = 1;
+            qtdefaixaA2 = 0;
+            qtdefaixaA3 = 0
+            qtdefaixaA4 = 0;
+            qtdefaixaA5 = 0;
         }else {
-            if (consumoregistrado <= (faixa1+faixa2)){
-                faixaA2 = consumoregistrado - faixa1;
+            if (consumoregistrado <= (qtdefaixaA1+qtdefaixaA2)){
+                qtdefaixaA2 = consumoregistrado - qtdefaixaA1;
+                console.log(qtdefaixaA2);
                 isfaixaA2 = 1;
-                faixaA1 = 0
-                faixaA3 = 0
-                faixaA4 = 0;
-                faixaA5 = 0;
+                qtdefaixaA1 = 0
+                qtdefaixaA3 = 0
+                qtdefaixaA4 = 0;
+                qtdefaixaA5 = 0;
             }else {
-                if (consumoregistrado <= (faixa1+faixa2+faixa3)){
-                    faixaA3 = consumoregistrado - faixa1 - faixa2;
+                if (consumoregistrado <= (qtdefaixaA1+qtdefaixaA2+qtdefaixaA3)){
+                    qtdefaixaA3 = consumoregistrado - qtdefaixaA1 - qtdefaixaA2;
+                    console.log(qtdefaixaA3);
                     isfaixaA3 = 1;
-                    faixaA1 = 0;                                
-                    faixaA4 = 0;
-                    faixaA5 = 0;
+                    qtdefaixaA1 = 0;                                
+                    qtdefaixaA4 = 0;
+                    qtdefaixaA5 = 0;
                 } else {
-                    if (consumoregistrado <= (faixa1+faixa2+faixa3+faixa4)){
-                        faixaA4 = consumoregistrado - faixa1 - faixa2 - faixa3;
+                    if (consumoregistrado <= (qtdefaixaA1+qtdefaixaA2+qtdefaixaA3+qtdefaixaA4)){
+                        qtdefaixaA4 = consumoregistrado - qtdefaixaA1 - qtdefaixaA2 - qtdefaixaA3;
+                        console.log(qtdefaixaA4);
                         isfaixaA4 = 1;
-                        faixaA1 = 0;
-                        faixaA5 = 0;
+                        qtdefaixaA1 = 0;
+                        qtdefaixaA5 = 0;
                     }else{
-                        faixaA5 = consumoregistrado-faixa1-faixa2-faixa3-faixa4;
-                        faixaA1 = 0;
+                        faixaA5 = consumoregistrado-qtdefaixaA1-qtdefaixaA2-qtdefaixaA3-qtdefaixaA4;
+                        console.log(qtdefaixaA5);
+                        qtdefaixaA1 = 0;
                         isfaixaA5 = 1;
                     }
                 }
