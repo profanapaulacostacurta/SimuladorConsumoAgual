@@ -47,14 +47,14 @@ function calcularFaturaCategoriaA(consumoregistrado){
     console.log("f4: "+(isfaixaA4*faixaA4));
     console.log("f5: "+(isfaixaA5*faixaA5));
 
-    console.log("Tarifa: "(isfaixaA1*faixaA1) + (isfaixaA2*faixaA2) + (isfaixaA3*faixaA3) + (isfaixaA4*faixaA4) + (isfaixaA5*faixaA5));
+    console.log("Tarifa: " + (isfaixaA1*faixaA1) + (isfaixaA2*faixaA2) + (isfaixaA3*faixaA3) + (isfaixaA4*faixaA4) + (isfaixaA5*faixaA5));
     
     console.log("a1: "+(qtdefaixaA1*adicionalA1));
     console.log("a2: "+(qtdefaixaA2*adicionalA2));
     console.log("a3: "+(qtdefaixaA3*adicionalA3));
     console.log("a4: "+(qtdefaixaA4*adicionalA4));
     console.log("a5: "+(qtdefaixaA5*adicionalA5));
-    console.log("Adicional: "(isfaixaA1*qtdefaixaA1*adicionalA1) + (isfaixaA2*qtdefaixaA2*adicionalA2) + (isfaixaA3*qtdefaixaA3*adicionalA3) + (isfaixaA4*qtdefaixaA4*adicionalA4) + (isfaixaA5*qtdefaixaA5*adicionalA5));
+    console.log("Adicional: "+ (isfaixaA1*qtdefaixaA1*adicionalA1) + (isfaixaA2*qtdefaixaA2*adicionalA2) + (isfaixaA3*qtdefaixaA3*adicionalA3) + (isfaixaA4*qtdefaixaA4*adicionalA4) + (isfaixaA5*qtdefaixaA5*adicionalA5));
     
     return (isfaixaA1*faixaA1) + (isfaixaA2*faixaA2) + (isfaixaA3*faixaA3) + (isfaixaA4*faixaA4) + (isfaixaA5*faixaA5) +(isfaixaA1*qtdefaixaA1*adicionalA1) + (isfaixaA2*qtdefaixaA2*adicionalA2) + (isfaixaA3*qtdefaixaA3*adicionalA3) + (isfaixaA4*qtdefaixaA4*adicionalA4) + (isfaixaA5*qtdefaixaA5*adicionalA5);
 }
