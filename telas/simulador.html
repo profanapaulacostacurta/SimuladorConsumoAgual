@@ -66,7 +66,7 @@
         <hr class="bg-white"/>
         <div class="row justify-content-md-center ">
           <div class="col-sm-11 h-100 form-group">
-            <label class="text-center text-primary h3">INFORME O CONSUMO REALIZADO DA ÚLTIMA FATURA</label>
+            <label class="text-center text-primary h3">INFORME A LEITURA REALIZADA NA ÚLTIMA FATURA</label>
             <input class="text-center bg-secondary bg-opacity-25 form-control text-primary h1" type="number" id="consumoanterior" name="consumoanterior" required>
           </div>
         </div>
@@ -142,7 +142,7 @@
       <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label for="TarifaAgua" class="text-center text-primary h3">TARIFA DE ÁGUA (R$)</label>
+          <label for="TarifaAgua" class="text-center text-primary h3">TARIFA DE ÁGUA</label>
         </div>  
         <div class="col-sm-1 h-100 form-group">
          
@@ -154,7 +154,7 @@
       <hr class="bg-white"/>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label for="TarifaEsgoto" class="text-center text-primary h3">TARIFA DE ESGOTO (R$)</label>
+          <label for="TarifaEsgoto" class="text-center text-primary h3">TARIFA DE ESGOTO</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
@@ -166,7 +166,7 @@
       <hr class="bg-white">
       <div class="row mb-3 justify-content-md-center">
         <div class="col-sm-5 h-100 form-group">
-          <label for="ValorTotalFatura" class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA (R$)</label>
+          <label for="ValorTotalFatura" class="text-center form-label text-primary h3">VALOR TOTAL DA FATURA</label>
         </div>
         <div class="col-sm-1 h-100 form-group">
          
@@ -181,9 +181,9 @@
             .addEventListener("submit", (e) => {
                  e.preventDefault();
                  document.getElementById("GroupPeriodoRegistrado").value = (new Date(document.getElementById("dtatual").value) -  new Date(document.getElementById("dtanterior").value)) / (1000 * 60 * 60 * 24);
-                 document.getElementById("GroupConsumoRegistrado").value = parseFloat(document.getElementById("consumoatual").value) - parseInt(document.getElementById("consumoanterior").value);
-                 document.getElementById("MediaConsumoDiario").value =   parseFloat(document.getElementById("GroupConsumoRegistrado").value) /  parseInt(document.getElementById("GroupPeriodoRegistrado").value);
-                 document.getElementById("MediaConsumoMensal").value = (parseInt(parseFloat(document.getElementById("MediaConsumoDiario").value) * 30);
+                 document.getElementById("GroupConsumoRegistrado").value = parseInt(document.getElementById("consumoatual").value) - parseInt(document.getElementById("consumoanterior").value);
+                 document.getElementById("MediaConsumoDiario").value =   (parseFloat(document.getElementById("GroupConsumoRegistrado").value) /  parseFloat(document.getElementById("GroupPeriodoRegistrado").value)).toFixed(2);
+                 document.getElementById("MediaConsumoMensal").value = (parseFloat(document.getElementById("MediaConsumoDiario").value) * 30).toFixed(2);
                  document.getElementById("TarifaAgua").value = (calcularTarifa(parseFloat(document.getElementById("GroupConsumoRegistrado").value), document.getElementById("GroupCategoria").value)).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
                  if (document.getElementById("esgoto").value == 's'){
                     document.getElementById("TarifaEsgoto").value = ((parseFloat(document.getElementById("TarifaAgua").value) * 60)/100).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
