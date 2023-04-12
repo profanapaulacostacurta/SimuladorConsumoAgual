@@ -30,7 +30,7 @@ function calcularFaturaCategoriaA(consumoregistrado){
     let isfaixaA1=0,isfaixaA2=0,isfaixaA3=0, isfaixaA4=0,isfaixaA5=0;
     const faixaA1=22.84, faixaA2=22.84, faixaA3=42.62, faixaA4=71.74, faixaA5=295.91;
     const adicionalA1=0, adicionalA2=3.95, adicionalA3=5.81, adicionalA4=7.46, adicionalA5=9.00;
-        if (consumoregistrado <== qtdefaixaA1){
+        if (consumoregistrado <= qtdefaixaA1){
             qtdefaixaA1 = 0;
             console.log(qtdefaixaA1);
             isfaixaA1 = 1;
