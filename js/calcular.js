@@ -5,7 +5,7 @@ function calcularTarifa(consumoregistrado, categoria){
          if (categoria == 'B'){
              return calcularFaturaCategoriaB(consumoregistrado);
          }else{
-             return calcularFaturaCategoriac(consumoregistrado);
+             return calcularFaturaCategoriaC(consumoregistrado);
          }
     }
 }
