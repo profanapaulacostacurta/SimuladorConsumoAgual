@@ -4,81 +4,80 @@
     <script type="text/javascript" src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/js/calcular.js"></script>
   </head>
   <body>
-      <div class="container-xs">
-        <form id="formSimulador">
-        <div class="form">
-          <a href="https://profanapaulacostacurta.github.io/simuladorconsumoagua/menu/menu.html">
-            <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/images/fundo_table.jpeg" style="width: 100%;">
-          </a>
+  <div class="container-fluid">
+    <div class="row">
+      <a href="https://profanapaulacostacurta.github.io/simuladorconsumoagua/menu/menu.html">
+        <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/images/fundo_table.jpeg" style="width: 100%;">
+      </a>
+    </div>
+    <div class="row">
+      <div class="col"> 
+        <a href="simulador.html">
+          <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_simulador.png" style="width: 100%;">
+        </a>
+      </div>
+      <div class="col">
+        <a href="tarifas.html">
+           <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_laranja_tarifas.png" style="width: 100%;">
+        </a>
+      </div>
+      <div class="col">
+        <a href="taxas.html">
+          <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_taxas.png" style="width: 100%;">
+        </a>
+      </div>
+   </div> 
+ </div>
+ <div class="container-xs">
+    <form id="formSimulador">
+     <div class="row justify-content-md-center pt-5">
+        <div class="col-sm-7 form-group form-group-sm">
+          <label for="GroupCategoria" class="text-center form-label form-label-sm text-primary">SELECIONE SUA CATEGORIA</label>
+          <select class="form-select form-select-sm bg-secondary bg-opacity-25 text-center text-primary" id="GroupCategoria" name="categoria">
+            <option value="A">RESIDENCIAL</option>
+            <option value="B">COMERCIAL</option>
+            <option value="C">INDUSTRIAL E PODER PÚBLICO</option>
+          </select>
         </div>
- 
-        <div class="row">
-          <div class="col-sm-2"> 
-            <a href="simulador.html">
-              <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_laranja_simulador.png" style="width: 100%;">
-            </a>
-          </div>
-          <div class="col-sm-2">
-            <a href="tarifas.html">
-            <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_tarifas.png" style="width: 100%;">
-            </a>
-          </div>
-          <div class="col-sm-2">
-            <a href="taxas.html">
-              <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_taxas.png" style="width: 100%;">
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-md-center pt-5">
-          <div class="col-sm-7 form-group form-group-sm">
-            <label for="GroupCategoria" class="text-center form-label form-label-sm text-primary">SELECIONE SUA CATEGORIA</label>
-            <select class="form-select form-select-sm bg-secondary bg-opacity-25 text-center text-primary" id="GroupCategoria" name="categoria">
-                <option value="A">RESIDENCIAL</option>
-                <option value="B">COMERCIAL</option>
-                <option value="C">INDUSTRIAL E PODER PÚBLICO</option>
-            </select>
-          </div>
-        </div>
+      </div>
         
-        <div class="row justify-content-md-center pt-2">
-          <div class="col-sm-7 form-group form-group-sm">
+      <div class="row justify-content-md-center pt-2">
+        <div class="col-sm-7 form-group form-group-sm">
             <label class="text-center form-label form-label-sm text-primary">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>
             <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" type="date" id="dtanterior" name="dtanterior" required>
-          </div>
         </div>
-        <div class="row justify-content-md-center pt-2">
-          <div class="col-sm-7 form-group form-group-sm">
-            <label class="text-center form-label form-label-sm text-primary">INFORME A LEITURA REALIZADA NA ÚLTIMA FATURA</label>
-            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" type="number" id="consumoanterior" name="consumoanterior" required>
-          </div>
+      </div>
+      <div class="row justify-content-md-center pt-2">
+        <div class="col-sm-7 form-group form-group-sm">
+          <label class="text-center form-label form-label-sm text-primary">INFORME A LEITURA REALIZADA NA ÚLTIMA FATURA</label>
+          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" type="number" id="consumoanterior" name="consumoanterior" required>
         </div>
-        <div class="row justify-content-md-center pt-2">
-          <div class="col-sm-7 form-group form-group-sms">
-            <label class="text-center form-label form-label-sm text-primary">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control form-control-sm text-primary" type="date" id="dtatual" name="dtatual" required>
-          </div>
+      </div>
+      <div class="row justify-content-md-center pt-2">
+        <div class="col-sm-7 form-group form-group-sms">
+          <label class="text-center form-label form-label-sm text-primary">INFORME A DATA DA MEDIÇÃO ATUAL</label>
+          <input class="bg-secondary text-center bg-opacity-25 form-control form-control-sm text-primary" type="date" id="dtatual" name="dtatual" required>
         </div>
-        <hr class="bg-white"/>
-        <div class="row justify-content-md-center pt-2">
-          <div class="col-sm-7 form-group form-group-sm">
-            <label class="text-center form-label form-label-sm text-primary">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control form-control-sm text-primary" type="number" id="consumoatual" name="consumoatual" required>
-          </div>
+      </div>
+      <div class="row justify-content-md-center pt-2">
+        <div class="col-sm-7 form-group form-group-sm">
+          <label class="text-center form-label form-label-sm text-primary">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
+          <input class="bg-secondary text-center bg-opacity-25 form-control form-control-sm text-primary" type="number" id="consumoatual" name="consumoatual" required>
         </div>
-        <div class="row justify-content-md-center pt-2">
-          <div class="col-sm-7 form-group form-group-sm">
-            <label class="text-center form-label form-label-sm text-primary">NA SUA RUA EXISTE REDE COLETORA DE ESGOTO</label>
-            <select class="form-select form-select-sm bg-secondary bg-opacity-25 text-center text-primary" id="esgoto" name="esgoto">
-              <option value="s">Sim</option>
-              <option value="n">Não</option>
-            </select>
-          </div>
+      </div>
+      <div class="row justify-content-md-center pt-2">
+        <div class="col-sm-7 form-group form-group-sm">
+          <label class="text-center form-label form-label-sm text-primary">NA SUA RUA EXISTE REDE COLETORA DE ESGOTO</label>
+          <select class="form-select form-select-sm bg-secondary bg-opacity-25 text-center text-primary" id="esgoto" name="esgoto">
+            <option value="s">Sim</option>
+            <option value="n">Não</option>
+          </select>
         </div>
-        
+      </div>
       <div class="row mb-3 justify-content-md-center pt-2">
-         <div class="col-sm-7 form-group form-group-sm">
+        <div class="col-sm-7 form-group form-group-sm">
           <button type="submit" class="btn btn-primary btn-sn" id="btncalcular" name="btncalcular">CALCULAR</button>
-         </div>
+        </div>
       </div>
             
       <div class="row mb-3 justify-content-md-center pt-2">
@@ -87,7 +86,6 @@
           <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="GroupPeriodoRegistrado" value="" disabled="">
         </div>
         <div class="col-sm-1">
-         
         </div>
         <div class="col-sm-3 h-100 form-group form-group-sm">
           <label for="GroupConsumoRegistrado" class="form-label form-label-sm text-center text-primary">CONSUMO REGISTRADO</label>
@@ -99,7 +97,6 @@
           <label for="MediaConsumoDiario" class="text-center form-label form-label-sm text-primary">MÉDIA CONSUMO DIÁRIO M³</label>
         </div>
         <div class="col-sm-1">
-         
         </div>
         <div class="col-sm-3 form-group form-group-sm">
           <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoDiario" value="" disabled="">
@@ -110,19 +107,16 @@
           <label for="MediaConsumoMensal" class="text-center form-label form-label-sm text-primary bg-opacity-25">MÉDIA CONSUMO MENSAL M³</label>
         </div>
         <div class="col-sm-1 form-group form-group-sm">
-         
         </div>
         <div class="col-sm-3 form-group form-group-sm">
           <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoMensal" value="" disabled="">
         </div>
       </div>
-      <br>
       <div class="row mb-3 justify-content-md-center pt-2">
         <div class="col-sm-3 form-group form-group-sm">
           <label for="TarifaAgua" class="text-center form-label form-label-sm text-primary">TARIFA DE ÁGUA</label>
         </div>  
         <div class="col-sm-1 form-group">
-         
         </div>
         <div class="col-sm-3 form-group form-group-sm">
           <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaAgua" value="" disabled="">
@@ -133,7 +127,6 @@
           <label for="TarifaEsgoto" class="text-center form-label form-label-sm text-primary">TARIFA DE ESGOTO</label>
         </div>
         <div class="col-sm-1 form-group form-group-sm">
-         
         </div>
         <div class="col-sm-3 form-group form-group-sm">
           <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaEsgoto" value="" disabled="">
@@ -144,15 +137,14 @@
           <label for="ValorTotalFatura" class="text-center form-label form-label-sm text-primary">VALOR TOTAL DA FATURA</label>
         </div>
         <div class="col-sm-1 h-100 form-group-xs">
-         
         </div>
         <div class="col-sm-3 form-group form-group-sm">
           <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="ValorTotalFatura" value="" disabled="">
         </div>
       </div>
-        </form>
-    </div>
-    <script type="text/javascript">
+    </form>
+  </div>
+  <script type="text/javascript">
        document.getElementById("formSimulador")
             .addEventListener("submit", (e) => {
                  e.preventDefault();
@@ -172,6 +164,6 @@
                  document.getElementById("ValorTotalFatura").value = (tarifa + esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'}); 
          
        })
-   </script>
-  </body>
+  </script>
+ </body>
 </html>
