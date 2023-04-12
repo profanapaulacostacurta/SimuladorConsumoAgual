@@ -6,65 +6,63 @@
   <body>
       <div class="container-xs">
         <form id="formSimulador">
-        <div class="row">
+        <div class="form">
           <a href="https://profanapaulacostacurta.github.io/simuladorconsumoagua/menu/menu.html">
             <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/images/fundo_table.jpeg" style="width: 100%;">
           </a>
         </div>
  
         <div class="row">
-          <div class="col-xs-4 h-100"> 
+          <div class="col-sm-4"> 
             <a href="simulador.html">
               <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_laranja_simulador.png" style="width: 100%;">
             </a>
           </div>
-          <div class="col-xs-4 h-100">
+          <div class="col-sm-4">
             <a href="tarifas.html">
             <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_tarifas.png" style="width: 100%;">
             </a>
           </div>
-          <div class="col-xs-4 h-100">
+          <div class="col-sm-4">
             <a href="taxas.html">
               <img src="https://profanapaulacostacurta.github.io/simuladorconsumoagua/botao/botao_branco_taxas.png" style="width: 100%;">
             </a>
           </div>
         </div>
-        <div class="row justify-content-md-center">
-          <div class="col-xs-11 form-group-xs">
-            <label for="GroupCategoria" class="text-center form-label-xs text-primary f6">SELECIONE SUA CATEGORIA</label>
-            <select class="form-select-xs bg-secondary bg-opacity-25 text-center text-primary f6" id="GroupCategoria" name="categoria">
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-sm-11 form-group form-group-sm">
+            <label for="GroupCategoria" class="text-center form-label form-label-sm text-primary">SELECIONE SUA CATEGORIA</label>
+            <select class="form-select form-select-sm bg-secondary bg-opacity-25 text-center text-primary" id="GroupCategoria" name="categoria">
                 <option value="A">RESIDENCIAL</option>
                 <option value="B">COMERCIAL</option>
                 <option value="C">INDUSTRIAL E PODER PÚBLICO</option>
             </select>
           </div>
         </div>
-        <hr class="bg-white"/>
-        <div class="row justify-content-md-center ">
-          <div class="col-xs-11 h-100 form-group-xs">
-            <label class="text-center form-label-xs text-primary f6">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>
-            <input class="text-center bg-secondary bg-opacity-25 form-control-xs text-primary f6" type="date" id="dtanterior" name="dtanterior" required>
+        
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-sm-11 form-group form-group-sm">
+            <label class="text-center form-label form-label-sm text-primary">INFORME A DATA DA LEITURA DA ÚLTIMA FATURA</label>
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" type="date" id="dtanterior" name="dtanterior" required>
+          </div>
+        </div>
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-sm-11 form-group form-group-sm">
+            <label class="text-center form-label form-label-sm text-primary">INFORME A LEITURA REALIZADA NA ÚLTIMA FATURA</label>
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" type="number" id="consumoanterior" name="consumoanterior" required>
+          </div>
+        </div>
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-xs-11 form-group form-group-sms">
+            <label class="text-center form-label form-label-sm text-primary">INFORME A DATA DA MEDIÇÃO ATUAL</label>
+            <input class="bg-secondary text-center bg-opacity-25 form-control form-control-sm text-primary" type="date" id="dtatual" name="dtatual" required>
           </div>
         </div>
         <hr class="bg-white"/>
-        <div class="row justify-content-md-center ">
-          <div class="col-xs-11 h-100 form-group-xs">
-            <label class="text-center form-label-xs text-primary f6">INFORME A LEITURA REALIZADA NA ÚLTIMA FATURA</label>
-            <input class="text-center bg-secondary bg-opacity-25 form-control-xs text-primary f6" type="number" id="consumoanterior" name="consumoanterior" required>
-          </div>
-        </div>
-        <hr class="bg-white"/>
-        <div class="row justify-content-md-center ">
-          <div class="col-xs-11 h-100 form-group-xs">
-            <label class="text-center form-label-xs text-primary f6">INFORME A DATA DA MEDIÇÃO ATUAL</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control-xs text-primary f6" type="date" id="dtatual" name="dtatual" required>
-          </div>
-        </div>
-        <hr class="bg-white"/>
-        <div class="row justify-content-md-center ">
-          <div class="col-xs-11 h-100 form-group-xs">
-            <label class="text-center form-label-xs text-primary f6">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
-            <input class="bg-secondary text-center bg-opacity-25 form-control-xs text-primary f6" type="number" id="consumoatual" name="consumoatual" required>
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-xs-11 h-100 form-group form-group-sm">
+            <label class="text-center form-label form-label-sm text-primary">INFORME A MEDIÇÃO ATUAL DO SEU HIDRÔMETRO</label>
+            <input class="bg-secondary text-center bg-opacity-25 form-control-xs text-primary" type="number" id="consumoatual" name="consumoatual" required>
           </div>
         </div>
         <hr class="bg-white" />
