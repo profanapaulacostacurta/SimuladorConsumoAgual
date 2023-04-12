@@ -1,17 +1,3 @@
-function calcularPeriodo(dtanterior, dtatual){
-    return dtatual - dtanterior;
-}
-function calcularConsumo(consumoanterior, consumoatual ){
-    return consumoatual - consumoanterior;
-}
-
-function calcularMediaconsumodiario(consumoregistrado, periodoregistrado){
-    return consumoregistrado/periodoregistrado;
-}
-
-function calcularMediaconsumomensal(mediaconsumodiario){
-    return consumoregistrado*30;
-}
 
 function calcularTarifa(consumoregistrado, categoria){
     if (categoria == 'A'){
