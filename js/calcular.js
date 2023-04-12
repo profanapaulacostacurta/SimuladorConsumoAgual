@@ -65,10 +65,22 @@ function calcularFaturaCategoriaB(consumoregistrado){
     const faixaB1=22.84, faixaB2=39.55; 
     const adicionalB1=0, adicionalB2=4.82; 
          if (consumoregistrado <= qtdefaixaB1){
-           isfaxa1=1;
+           isfaixaB1=1;
         }else {
             qtdefaixaB2 = consumoregistrado-faixaB1;
+            isfaixaB2=1;
         }    
+    console.log("f1: "+(isfaixaB1*faixaB1));
+    console.log("f2: "+(isfaixaB2*faixaB2));
+   
+
+    console.log("Tarifa: " + (isfaixaB1*faixaB1) + (isfaixaB2*faixaB2));
+    
+    console.log("a1: "+(qtdefaixaB1*adicionalB1));
+    console.log("a2: "+(qtdefaixaB2*adicionalB2));
+   
+    console.log("Adicional: "+ (isfaixaB1*qtdefaixaB1*adicionalB1) + (isfaixaB2*qtdefaixaB2*adicionalB2));
+    
     return (isfaixaB1*faixaB1) + (isfaixaB2*faixaB2) + (isfaixaB1*qtdefaixaB1*adicionalB1) + (isfaixaB2*qtdefaixaB2*adicionalB2);    
 }
 
@@ -78,10 +90,21 @@ function calcularFaturaCategoriaC(consumoregistrado){
     const faixaC1=54.05, faixaC2=54.05; 
     const adicionalC1=0, adicionalC2=6.14; 
     if (consumoregistrado <= qtdefaixaC1){
-        isfaixa1=1;
+        isfaixaC1=1;
       }else {
         faixa2 = consumoregistrado-qtdefaixaC1;
-        isfaixa2=1;
+        isfaixaC2=1;
     }    
-    return (isfaixac1*faixaC1) + (isfaixaC2*faixaC2) + (isfaixaC1*qtdefaixaC1*adicionalC1) + (isfaixaC2*qtdefaixaC2*adicionalC2);    
+    console.log("f1: "+(isfaixaC1*faixaC1));
+    console.log("f2: "+(isfaixaC2*faixaC2));
+   
+
+    console.log("Tarifa: " + (isfaixaC1*faixaC1) + (isfaixaC2*faixaC2));
+    
+    console.log("a1: "+(qtdefaixaC1*adicionalC1));
+    console.log("a2: "+(qtdefaixaC2*adicionalC2));
+   
+    console.log("Adicional: "+ (isfaixaC1*qtdefaixaC1*adicionalC1) + (isfaixaC2*qtdefaixaC2*adicionalC2));
+    
+    return (isfaixaC1*faixaC1) + (isfaixaC2*faixaC2) + (isfaixaC1*qtdefaixaC1*adicionalC1) + (isfaixaC2*qtdefaixaC2*adicionalC2);    
 }
