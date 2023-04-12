@@ -11,7 +11,7 @@ function calcularTarifa(consumoregistrado, categoria){
 }
 
 function calcularFaturaCategoriaA(consumoregistrado){
-    let qtdefaixaA1=10, qtdefaixaA2=5, qtdefaixaA3=5, qtdefaixaA4=29, qtdefaixaA5=0;
+    let qtdefaixaA1=10, qtdefaixaA2=5, qtdefaixaA3=5, qtdefaixaA4=30, qtdefaixaA5=0;
     let isfaixaA1=0,isfaixaA2=0,isfaixaA3=0, isfaixaA4=0,isfaixaA5=0;
     const faixaA1=22.84, faixaA2=22.84, faixaA3=42.62, faixaA4=71.74, faixaA5=295.91;
     const adicionalA1=0, adicionalA2=3.95, adicionalA3=5.81, adicionalA4=7.46, adicionalA5=9.00;
