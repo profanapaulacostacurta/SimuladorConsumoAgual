@@ -34,7 +34,7 @@ function calcularFaturaCategoriaA(consumoregistrado){
                         console.log("faixa4: "+qtdefaixaA4);
                         isfaixaA4 = 1;
                     }else{
-                        faixaA5 = consumoregistrado-qtdefaixaA1-qtdefaixaA2-qtdefaixaA3-qtdefaixaA4;
+                        qtdefaixaA5 = consumoregistrado-qtdefaixaA1-qtdefaixaA2-qtdefaixaA3-qtdefaixaA4;
                         console.log("faixa5: "+qtdefaixaA5);
                         isfaixaA5 = 1;
                     }
