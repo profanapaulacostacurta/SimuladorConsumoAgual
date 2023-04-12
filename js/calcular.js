@@ -1,4 +1,3 @@
-
 function calcularTarifa(consumoregistrado, categoria){
     if (categoria == 'A'){
         return calcularFaturaCategoriaA(consumoregistrado);
@@ -73,6 +72,7 @@ function calcularFaturaCategoriaB(consumoregistrado){
         }    
     return (isfaixaB1*faixaB1) + (isfaixaB2*faixaB2) + (isfaixaB1*qtdefaixaB1*adicionalB1) + (isfaixaB2*qtdefaixaB2*adicionalB2);    
 }
+
 function calcularFaturaCategoriaC(consumoregistrado){
     let qtdefaixaC1=10, qtdefaixaC2=0;
     let isfaixaC1=0,isfaixaC2=0;
@@ -88,3 +88,4 @@ function calcularFaturaCategoriaC(consumoregistrado){
         isfaixa2=1;
     }    
     return (isfaixac1*faixaC1) + (isfaixaC2*faixaC2) + (isfaixaC1*qtdefaixaC1*adicionalC1) + (isfaixaC2*qtdefaixaC2*adicionalC2);    
+}
