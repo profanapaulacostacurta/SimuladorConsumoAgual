@@ -81,69 +81,73 @@
       </div>
       
       <hr class="bg-primary h-5">
-      <div class="row mx-6 justify-content-md-center" align="center">
-        <div class="col form-group form-group-sm">
-          <label class="form-label form-label-sm text-center text-primary h6">RESULTADO DA SIMULAÇÃO</label>
-         </div>
-      </div>
-       <hr class="bg-primary h-5">
-            
       
-      <div class="row mx-6 justify-content-md-center">
-        <div class="col form-group form-group-sm">
-          <label for="GroupPeriodoRegistrado" class="form-label form-label-sm text-center text-primary">PERÍODO REGISTRADO</label>
-          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="GroupPeriodoRegistrado" value="" disabled="">
+      <div id="resultadoSimulcao" hidden>
+        <div class="row mx-6 justify-content-md-center" align="center">
+          <div class="col form-group form-group-sm">
+            <label class="form-label form-label-sm text-center text-primary h6">RESULTADO DA SIMULAÇÃO</label>
+           </div>
         </div>
-        <div class="col h-100 form-group form-group-sm">
-          <label for="GroupConsumoRegistrado" class="form-label form-label-sm text-center text-primary">CONSUMO REGISTRADO</label>
-          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="GroupConsumoRegistrado" value="" disabled="">
+         <hr class="bg-primary h-5">
+
+
+        <div class="row mx-6 justify-content-md-center">
+          <div class="col form-group form-group-sm">
+            <label for="GroupPeriodoRegistrado" class="form-label form-label-sm text-center text-primary">PERÍODO REGISTRADO</label>
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="GroupPeriodoRegistrado" value="" disabled="">
+          </div>
+          <div class="col h-100 form-group form-group-sm">
+            <label for="GroupConsumoRegistrado" class="form-label form-label-sm text-center text-primary">CONSUMO REGISTRADO</label>
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="GroupConsumoRegistrado" value="" disabled="">
+          </div>
+        </div>
+        <div class="row mx-6 justify-content-md-center">
+          <div class="col form-group form-group-sm">
+            <label for="MediaConsumoDiario" class="text-center form-label form-label-sm text-primary">MÉDIA CONSUMO DIÁRIO M³</label>
+          </div>
+
+          <div class="col form-group form-group-sm">
+            <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoDiario" value="" disabled="">
+          </div>
+        </div>
+        <div class="row mx-6 justify-content-md-center">
+          <div class="col  form-group form-group-sm">
+            <label for="MediaConsumoMensal" class="text-center form-label form-label-sm text-primary bg-opacity-25">MÉDIA CONSUMO MENSAL M³</label>
+          </div>
+
+          <div class="col form-group form-group-sm">
+            <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoMensal" value="" disabled="">
+          </div>
+        </div>
+        <div class="row mx-6 justify-content-md-center ">
+          <div class="col form-group form-group-sm">
+            <label for="TarifaAgua" class="text-center form-label form-label-sm text-primary">TARIFA DE ÁGUA</label>
+          </div>  
+
+          <div class="col form-group form-group-sm">
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaAgua" value="" disabled="">
+          </div>
+        </div>
+        <div class="row mx-6 justify-content-md-center">
+          <div class="col form-group form-group-sm">
+            <label for="TarifaEsgoto" class="text-center form-label form-label-sm text-primary">TARIFA DE ESGOTO</label>
+          </div>
+
+          <div class="col form-group form-group-sm">
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaEsgoto" value="" disabled="">
+          </div>
+        </div>
+        <div class="row mx-6 justify-content-md-center ">
+          <div class="col form-group form-group-sm">
+            <label for="ValorTotalFatura" class="text-center form-label form-label-sm text-primary">VALOR TOTAL DA FATURA</label>
+          </div>
+
+          <div class="col form-group form-group-sm">
+            <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="ValorTotalFatura" value="" disabled="">
+          </div>
         </div>
       </div>
-      <div class="row mx-6 justify-content-md-center">
-        <div class="col form-group form-group-sm">
-          <label for="MediaConsumoDiario" class="text-center form-label form-label-sm text-primary">MÉDIA CONSUMO DIÁRIO M³</label>
-        </div>
-        
-        <div class="col form-group form-group-sm">
-          <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoDiario" value="" disabled="">
-        </div>
-      </div>
-      <div class="row mx-6 justify-content-md-center">
-        <div class="col  form-group form-group-sm">
-          <label for="MediaConsumoMensal" class="text-center form-label form-label-sm text-primary bg-opacity-25">MÉDIA CONSUMO MENSAL M³</label>
-        </div>
       
-        <div class="col form-group form-group-sm">
-          <input class="text-center form-control form-control-sm bg-secondary bg-opacity-25 text-primary" id="MediaConsumoMensal" value="" disabled="">
-        </div>
-      </div>
-      <div class="row mx-6 justify-content-md-center ">
-        <div class="col form-group form-group-sm">
-          <label for="TarifaAgua" class="text-center form-label form-label-sm text-primary">TARIFA DE ÁGUA</label>
-        </div>  
-        
-        <div class="col form-group form-group-sm">
-          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaAgua" value="" disabled="">
-        </div>
-      </div>
-      <div class="row mx-6 justify-content-md-center">
-        <div class="col form-group form-group-sm">
-          <label for="TarifaEsgoto" class="text-center form-label form-label-sm text-primary">TARIFA DE ESGOTO</label>
-        </div>
-        
-        <div class="col form-group form-group-sm">
-          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="TarifaEsgoto" value="" disabled="">
-        </div>
-      </div>
-       <div class="row mx-6 justify-content-md-center ">
-        <div class="col form-group form-group-sm">
-          <label for="ValorTotalFatura" class="text-center form-label form-label-sm text-primary">VALOR TOTAL DA FATURA</label>
-        </div>
-      
-        <div class="col form-group form-group-sm">
-          <input class="text-center bg-secondary bg-opacity-25 form-control form-control-sm text-primary" id="ValorTotalFatura" value="" disabled="">
-        </div>
-      </div>
     </form>
   </div>
   <script type="text/javascript">
@@ -164,6 +168,7 @@
                     document.getElementById("TarifaEsgoto").value = 'R$ 0.00';
                  }
                  document.getElementById("ValorTotalFatura").value = (tarifa + esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'}); 
+         
          
        })
   </script>
