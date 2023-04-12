@@ -166,6 +166,7 @@
                     var esgoto = (tarifa * 60)/100;
                     document.getElementById("TarifaEsgoto").value = (esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
                  } else {
+                    esgoto = 0;
                     document.getElementById("TarifaEsgoto").value = 'R$ 0.00';
                  }
                  document.getElementById("ValorTotalFatura").value = (tarifa + esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'}); 
