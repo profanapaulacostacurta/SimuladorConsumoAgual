@@ -190,7 +190,7 @@
                     var esgoto = (tarifa * 60)/100;
                     document.getElementById("TarifaEsgoto").value = (esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
                  } else {
-                    document.getElementById("TarifaEsgoto").value = 0.toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
+                    document.getElementById("TarifaEsgoto").value = 'R$ 0.00';
                  }
                  document.getElementById("ValorTotalFatura").value = (tarifa + esgoto).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'}); 
          
