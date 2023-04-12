@@ -67,7 +67,7 @@ function calcularFaturaCategoriaB(consumoregistrado){
          if (consumoregistrado <= qtdefaixaB1){
            isfaixaB1=1;
         }else {
-            qtdefaixaB2 = consumoregistrado-faixaB1;
+            qtdefaixaB2 = consumoregistrado-qtdefaixaB1;
             isfaixaB2=1;
         }    
     console.log("f1: "+(isfaixaB1*faixaB1));
@@ -92,7 +92,7 @@ function calcularFaturaCategoriaC(consumoregistrado){
     if (consumoregistrado <= qtdefaixaC1){
         isfaixaC1=1;
       }else {
-        faixa2 = consumoregistrado-qtdefaixaC1;
+        qtdefaixaC2 = consumoregistrado-qtdefaixaC1;
         isfaixaC2=1;
     }    
     console.log("f1: "+(isfaixaC1*faixaC1));
